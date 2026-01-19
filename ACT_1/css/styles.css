@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== VARIABLES Y COLORES ===== */
+:root {
+  --bg: #f9fafb;
+  --texto: #111827;
+  --secundario: #4b5563;
+  --primario: #1d4ed8;
+  --borde: #e5e7eb;
+  --fondo-tarjeta: #ffffff;
+  --btn-bg: #1d4ed8;
+  --btn-text: #ffffff;
+}
+
+/* ===== ESTILO GLOBAL ===== */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ===== ENCABEZADO ===== */
+.top {
+  border-bottom: 1px solid var(--borde);
+  background: #ffffff;
+}
+
+.top-inner {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.hero-text h1 {
+  font-size: 24px;
+  color: var(--primario);
+  margin-bottom: 6px;
+}
+
+.hero-resumen {
+  color: var(--secundario);
+  margin-bottom: 4px;
+}
+
+.hero-mision,
+.hero-vision {
+  font-size: 14px;
+  color: var(--secundario);
+}
+
+/* ===== SECCIONES GENERALES ===== */
+.section {
+  padding: 20px 16px;
+}
+
+.section h2 {
+  font-size: 20px;
+  color: var(--primario);
+  margin-bottom: 8px;
+}
+
+.section p {
+  color: var(--secundario);
+}
+
+/* ===== PROYECTOS ===== */
+.projects-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.project {
+  background: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.project h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: var(--texto);
+}
+
+.project p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--primario);
+  text-decoration: underline;
+}
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+.contact-form {
+  margin-top: 10px;
+  max-width: 520px;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: var(--texto);
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+  overflow-y: auto;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primario);
+  outline-offset: 1px;
+}
+
+.btn-enviar {
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  filter: brightness(1.05);
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.pie {
+  border-top: 1px solid var(--borde);
+  background: #ffffff;
+}
+
+.pie-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.social a {
+  font-size: 14px;
+  color: var(--primario);
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+.pie small {
+  font-size: 12px;
+  color: var(--secundario);
+}
+
+/* ===== DISEÑO RESPONSIVO ===== */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pie-inner {
+    flex-direction: row;
+  }
+}
