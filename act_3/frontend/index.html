@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema SAT - Facturación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="login-view" class="card">
+    <h2 style="text-align: center;">Portal de Facturación</h2>
+    <p style="text-align: center; color: #666;">Ingresa tus credenciales para continuar</p>
+
+    <input type="text" id="rfc" placeholder="RFC del Contribuyente (ej. XAXX010101000)" style="text-transform: uppercase;">
+    <input type="password" id="pass" placeholder="Contraseña">
+
+    <button onclick="login()">Iniciar Sesión</button>
+    <button class="btn-secondary" onclick="registrar()">Crear Cuenta Nueva</button>
+</div>
+
+<div id="app-view" class="card hidden">
+    <div style="display:flex; justify-content:space-between; align-items: center; margin-bottom: 20px;">
+        <h2>Mis Facturas</h2>
+        <button onclick="logout()" class="btn-danger" style="width:auto; margin:0;">Cerrar Sesión</button>
+    </div>
+
+    <div style="background:#e2e6ea; padding:20px; border-radius: 8px; margin-bottom: 30px;">
+        <h3 style="margin-bottom: 15px; color: #333;">Generar Nueva Factura</h3>
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px;">
+            <input type="text" id="cliente" placeholder="Nombre del Cliente / Razón Social" style="margin:0;">
+            <input type="number" id="monto" placeholder="Monto Total ($)" style="margin:0;">
+        </div>
+        <input type="text" id="concepto" placeholder="Descripción del Concepto o Servicio">
+        <button id="btn-guardar" onclick="guardarFactura()">Crear Borrador</button>
+    </div>
+
+    <h3>Historial Reciente</h3>
+    <div style="overflow-x: auto;">
+        <table>
+            <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Monto</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody id="tabla-facturas">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

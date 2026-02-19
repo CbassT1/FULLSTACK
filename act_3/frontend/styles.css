@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h2, h3 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+
+.card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    border: 1px solid #e9ecef;
+}
+
+
+input, button, select {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input {
+    background-color: #e9ecef;
+    border: 2px solid transparent;
+}
+
+input:focus {
+    background-color: #fff;
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #0069d9;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #0053a7;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+.btn-secondary:hover { background-color: #5a6268; }
+
+.btn-danger { background-color: #dc3545; }
+.btn-danger:hover { background-color: #c82333; }
+
+
+.hidden { display: none; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th { background-color: #0069d9; color: white; }
+
+.estado-emitida { color: #28a745; font-weight: bold; padding: 5px 10px; background: #d4edda; border-radius: 20px; font-size: 0.9em;}
+.estado-cancelada { color: #dc3545; text-decoration: line-through; padding: 5px 10px; background: #f8d7da; border-radius: 20px; font-size: 0.9em;}
+.estado-borrador { color: #856404; padding: 5px 10px; background: #fff3cd; border-radius: 20px; font-size: 0.9em; }
+
+.btn-sm { width: auto; display: inline-block; margin: 0 2px; padding: 6px 12px; font-size: 0.85rem; }
