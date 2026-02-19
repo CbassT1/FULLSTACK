@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1771460167234,
+    "rfc_emisor": "MATS010804QS6",
+    "cliente": "PRUEBA",
+    "monto": "150000",
+    "concepto": "PRUEBA",
+    "estado": "Cancelada",
+    "fecha": "2026-02-19T00:16:07.234Z"
+  },
+  {
+    "id": 1771460607881,
+    "rfc_emisor": "MATS010804QS6",
+    "cliente": "PRUEBA2",
+    "monto": "100000",
+    "concepto": "PRUEBA EDITADA",
+    "estado": "Emitida",
+    "fecha": "2026-02-19T00:23:27.881Z"
+  },
+  {
+    "id": 1771462418158,
+    "rfc_emisor": "MATS010804QS6",
+    "cliente": "PRUEBA3 EDIT",
+    "monto": "150",
+    "concepto": "PRUEBA EDITADA 3",
+    "estado": "No emitida",
+    "fecha": "2026-02-19T00:53:38.158Z"
+  }
+]
